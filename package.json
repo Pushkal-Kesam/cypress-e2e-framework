@@ -1,0 +1,17 @@
+{
+  "name": "cypress-e2e-framework",
+  "version": "1.0.0",
+  "description": "Cypress end-to-end test framework using the Page Object pattern against saucedemo.com",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:login": "cypress run --spec cypress/e2e/login.cy.js",
+    "test:inventory": "cypress run --spec cypress/e2e/inventory.cy.js",
+    "test:checkout": "cypress run --spec cypress/e2e/checkout.cy.js",
+    "test:ci": "cypress run --browser chrome"
+  },
+  "devDependencies": {
+    "cypress": "^13.15.0"
+  }
+}
